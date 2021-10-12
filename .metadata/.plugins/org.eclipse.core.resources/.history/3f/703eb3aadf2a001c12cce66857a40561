@@ -1,0 +1,25 @@
+//x = 8;
+//y = 0;
+//a = 5;
+//ENQUANTO x > 1 FAÇA:
+//y = x + a;
+//x = x / 2;
+//a = a + x + y;
+//FIM ENQUANTO
+//IMPRIME(a);
+
+
+public class Hellpers {
+	public static void main(String[] args) {
+		// defina tamanho de caracteres por linha, e depois de quantas linhas (por padrão 10 em cada)
+		
+		int tamanhoLinha = 10, qtdlinhas = 10;
+		for (int i  = 1; i < tamanhoLinha; i++ ) {
+			for (int li = 1; li < tamanhoLinha; li++) {
+				System.out.print("0");
+				System.out.print("1");
+			}
+			System.out.println();
+		}
+	}
+}

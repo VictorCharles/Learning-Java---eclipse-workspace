@@ -1,0 +1,8 @@
+public class Hellpers {
+	public static void main(String[] args) {
+		int pa = 10, suco = 12, pad = 7, combina = 0;
+		combina = (pa * suco) + (pad * suco);
+		System.out.println("Da pra fazer " + combina + " combinações, escolhendo um pastel (ou doce, ou salgado) e um suco");
+		
+	}
+}
