@@ -23,6 +23,8 @@ public class Ex14 {
 				kAbaixo++;
 			}
 		}
-		JOptionPane.showMessageDialog(null, "Tem " + kAcima+ " notas 10% acima da média\nTem" +kAbaixo+ " notas 10% abaixo da média" , "Acima ou Abaixo", 1);
+		JOptionPane.showMessageDialog(null,
+				"Tem " + kAcima + " notas 10% acima da média\nTem" + kAbaixo + " notas 10% abaixo da média",
+				"Acima ou Abaixo", 1);
 	}
 }

@@ -27,8 +27,7 @@ public class TestaMetodo {
 
 		contaDoPaulo.titular = "paulo silveira";
 		System.out.println(contaDoPaulo.titular);
-		
-		
+
 	}
 
 }

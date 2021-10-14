@@ -6,28 +6,28 @@ public class Conta {
 	private int numero;
 	private Cliente titular;
 	private static int total = 0;
-	
+
 	public Conta(int agencia, int numero) {
 		Conta.total++;
 		System.out.println("O total de contas é " + Conta.total);
 		this.agencia = agencia;
-		this.numero= numero;
+		this.numero = numero;
 		this.saldo = 100;
 		System.out.println("Estou criando uma conta " + this.numero);
 	}
-	//INicializar um objeto com dados dos atributos
-	
+	// INicializar um objeto com dados dos atributos
+
 	public Conta(double saldo, String nome) {
 		this.saldo = saldo;
 		this.titular.setNome(nome);
 	}
-	
+
 	public Conta() {
 		this.saldo = 0;
 		this.agencia = 0;
 		this.numero = 0;
 	}
-		
+
 	// METODOS - saldo
 	public void deposita(double valor) {
 		this.saldo = this.saldo + valor;
@@ -80,14 +80,16 @@ public class Conta {
 			System.out.println("Agencia invalida");
 		}
 	}
-	
+
 	// Metodos para cliente
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
+
 	public Cliente getTitular() {
 		return titular;
 	}
+
 	// Metodos para o total
 	public static int getTotal() {
 		return Conta.total;

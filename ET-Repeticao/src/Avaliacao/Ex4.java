@@ -5,7 +5,8 @@ Rodrigo Guedes dos Santos 3ºC
 ETIM - Informatica
 
 4. Faça um programa em Java que leia um número N, calcule e mostre os N primeiros termos da seqüência de Fibonacci (0, 1, 1, 2, 3, 5, 8, 13, ...). O valor lido para N sempre será maior ou igual a 2.
-*/package Avaliacao;
+*/
+package Avaliacao;
 
 import java.io.*;
 
@@ -19,7 +20,7 @@ public class Ex4 {
 			System.out.println("Indique quantos termos deve ser mostrado da escala de fibonacci");
 			termos = Integer.parseInt(dado.readLine());
 			System.out.print("Sequencia de Fibonacci: 0 1 ");
-			for (contr = 3; contr < termos+1; contr++) {
+			for (contr = 3; contr < termos + 1; contr++) {
 				if (contr > 2) {
 					aux = val + val2;
 					val = val2;

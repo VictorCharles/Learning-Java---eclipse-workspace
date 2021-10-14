@@ -62,9 +62,8 @@ public class AvaliacaoExtra1 {
 			}
 			if (contadorPontos == 13) {
 				w += r[l][0] + " - PARABENS! Você ganhou.\n";
-			}
-			else{
-				w += r[l][0] + " - Você fez " +contadorPontos+ " pontos.\n";
+			} else {
+				w += r[l][0] + " - Você fez " + contadorPontos + " pontos.\n";
 			}
 		}
 	}

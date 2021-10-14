@@ -9,9 +9,9 @@ public class Ex8 {
 		int n = Nums.length;
 		float soma = 0, multi = 1, num = Float.parseFloat(JOptionPane.showInputDialog(null,
 				"Digite um número para dividir cada elemento do vetor Numeros", "Número Divisor", 3));
-		float [] Produto = new float[n];
-		float [] Divisao = new float[n];
-		float [] Modulo = new float[n];
+		float[] Produto = new float[n];
+		float[] Divisao = new float[n];
+		float[] Modulo = new float[n];
 		String w = "";
 		for (int n1 = 0; n1 < n; n1++) {
 			Produto[n1] = Nums[n1] * Numeros[(n - 1) - n1];

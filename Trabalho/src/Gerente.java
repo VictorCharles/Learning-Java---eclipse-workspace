@@ -2,8 +2,8 @@
 public class Gerente extends Funcionario {
 	private int senha;
 	private int numeroDeFuncionariosGerenciados;
-	
-	public boolean autentica (int senha) {
+
+	public boolean autentica(int senha) {
 		if (this.senha == senha) {
 			System.out.println("Acesso Permitido!");
 			return true;
@@ -12,14 +12,14 @@ public class Gerente extends Funcionario {
 			return false;
 		}
 	}
-	
+
 	public int getSenha() {
 		return senha;
 	}
 
 	public void setSenha(int senha) {
 		if (senha != 0)
-		this.senha = senha;
+			this.senha = senha;
 	}
 
 	public int getNumeroDeFuncionariosGerenciados() {
@@ -28,7 +28,7 @@ public class Gerente extends Funcionario {
 
 	public void setNumeroDeFuncionariosGerenciados(int numeroDeFuncionariosGerenciados) {
 		if (numeroDeFuncionariosGerenciados != 0)
-		this.numeroDeFuncionariosGerenciados = numeroDeFuncionariosGerenciados;
+			this.numeroDeFuncionariosGerenciados = numeroDeFuncionariosGerenciados;
 	}
-	
+
 }

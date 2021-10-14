@@ -22,10 +22,10 @@ public class Ex7 {
 	public static void main(String[] args) {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 		String sexo = "", resposta = "";
-		int kM = 0, kF = 0, kS=0, kN=0, kFS = 0, kMN = 0, kP=0;
+		int kM = 0, kF = 0, kS = 0, kN = 0, kFS = 0, kMN = 0, kP = 0;
 
 		try {
-			for (kP = 1; kP <= 2000 ; kP++) {
+			for (kP = 1; kP <= 2000; kP++) {
 				System.out.println("Sexo do entrevistado. M para masculino e F para feminino");
 				sexo = dado.readLine();
 				if (sexo.equals("M") || sexo.equals("m")) {
@@ -35,8 +35,7 @@ public class Ex7 {
 					if (resposta.equals("N") || resposta.equals("n")) {
 						kMN++;
 						kN++;
-					}
-					else if (resposta.equals("S") || resposta.equals("s")) {
+					} else if (resposta.equals("S") || resposta.equals("s")) {
 						kS++;
 					}
 				}
@@ -44,11 +43,10 @@ public class Ex7 {
 					kF++;
 					System.out.println("Qual a resposta do entrevistado. S para sim e N para não");
 					resposta = dado.readLine();
-					if (resposta.equals("S")|| resposta.equals("s")) {
+					if (resposta.equals("S") || resposta.equals("s")) {
 						kFS++;
 						kS++;
-					}
-					else if (resposta.equals("N") || resposta.equals("n")) {
+					} else if (resposta.equals("N") || resposta.equals("n")) {
 						kN++;
 					}
 				}
@@ -58,14 +56,13 @@ public class Ex7 {
 			System.out.println("Quantas pessoas responderam não: " + kN);
 			System.out.println("Porcentagem de pessoas do sexo feminino: " + ((kF / kP) * 100) + "%");
 			System.out.println("Porcentagem de pessoas do sexo masculino: " + ((kM / kP) * 100) + "%");
-			System.out.println("Porcentagem de pessoas do sexo feminino que responderam sim: "+ ((kFS / kP) * 100) + "%");
-			System.out.println("Porcentagem de pessoas do sexo masculino que responderam não: "+ ((kMN / kP) * 100) + "%");
-			
-			
-			
+			System.out.println(
+					"Porcentagem de pessoas do sexo feminino que responderam sim: " + ((kFS / kP) * 100) + "%");
+			System.out.println(
+					"Porcentagem de pessoas do sexo masculino que responderam não: " + ((kMN / kP) * 100) + "%");
+
 			dado.close();
-			
-			
+
 		} catch (IOException erro) {
 			// Indica erro de entrada de dados
 			System.out.println("Houve erro na entrada de dados");

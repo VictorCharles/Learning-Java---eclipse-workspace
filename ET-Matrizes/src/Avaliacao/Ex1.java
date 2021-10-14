@@ -32,31 +32,31 @@ import javax.swing.JOptionPane;
 public class Ex1 {
 	public static void main(String[] args) {
 		int[][] m = { { 4, 6, 9, 3 }, { 1, 8, 5, 2 }, { 2, 4, 8, 9 }, { 3, 9, 3, 7 } };
-		//Matriz M declarada e preenchida com valores
+		// Matriz M declarada e preenchida com valores
 		int[][] r = new int[4][4];
 		int[][] a = new int[4][4];
 		int[][] p = new int[4][4];
 		int[][] s = new int[4][4];
-		//Outras matrizes
+		// Outras matrizes
 		int somaDP = 0, somaDO = 0, somaAll = 0;
-		//Variaveis para o A, B e C
+		// Variaveis para o A, B e C
 		int entrada = Integer.parseInt(JOptionPane.showInputDialog("Digite um número para formar a Matriz R"));
-		//Entrada de dado para a Matriz R
+		// Entrada de dado para a Matriz R
 		String w = "Matriz M: \n", rW = " \n", aW = " \n", pW = " \n", sW = " \n";
-		//Textos em variaveis para formar a respostas
-		
+		// Textos em variaveis para formar a respostas
+
 		for (int l = 0; l < 4; l++) {
 			for (int c = 0; c < 4; c++) {
 				somaAll += m[l][c];// Calculo para o passo C) Somar a matriz M
 				w += m[l][c] + "   "; // Formação da matriz M
 				r[l][c] = entrada * m[l][c]; // Calculo para formar a matriz R
-				rW += r[l][c] + "   ";//Texto pra ser adicionado ao W depois, formando a D 
+				rW += r[l][c] + "   ";// Texto pra ser adicionado ao W depois, formando a D
 				a[l][c] = r[l][c] + m[l][c]; // Calculo para formar a matriz A
-				aW += a[l][c] + "   ";//Texto pra ser adicionado ao W depois, formando a E
+				aW += a[l][c] + "   ";// Texto pra ser adicionado ao W depois, formando a E
 				p[l][c] = r[l][c] * m[l][c]; // Calculo para formar a matriz P
-				pW += p[l][c] + "   ";//Texto pra ser adicionado ao W depois, formando a F
+				pW += p[l][c] + "   ";// Texto pra ser adicionado ao W depois, formando a F
 				s[l][c] = p[l][c] - a[l][c]; // Calculo para formar a matriz S
-				sW += s[l][c] + "   ";//Texto pra ser adicionado ao W depois, formando a G
+				sW += s[l][c] + "   ";// Texto pra ser adicionado ao W depois, formando a G
 			}
 			w += "\n";
 			rW += "\n";
@@ -67,7 +67,6 @@ public class Ex1 {
 			somaDO += m[l][3 - l]; // calculo para o passo B) Somar diagonal oposta
 		}
 
-		
 		w += "\nA) Soma da diagonal principal: " + somaDP;
 		w += "\n\nB) Soma da diagonal oposta: " + somaDO;
 		w += "\n\nC) Soma de todos os elementos da matriz M: " + somaAll;

@@ -25,8 +25,8 @@ public class Cidade {
 
 	public static void main(String[] args) {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
-		double salarioFuncionario = 1, salarioMinimo = 0, somaSalario = 0, menorSal=999999999, maiorSal = 0;
-		int kP = 1; 
+		double salarioFuncionario = 1, salarioMinimo = 0, somaSalario = 0, menorSal = 999999999, maiorSal = 0;
+		int kP = 1;
 		float nFilho = 0, kPM = 0;
 
 		try {
@@ -45,7 +45,7 @@ public class Cidade {
 				if (salarioFuncionario < menorSal) {
 					menorSal = salarioFuncionario;
 				}
-				
+
 				somaSalario += salarioFuncionario;
 				System.out.print("    Digite a quantidade de filhos que o " + kP + "° funcionario tem: ");
 				nFilho += Float.parseFloat(dado.readLine());

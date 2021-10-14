@@ -36,78 +36,78 @@ public class Ex4 {
 		int[] roteiro = new int[4];
 		String w = "TABELA DE TEMPO: \n";
 		// A) Construa um programa que permita inserir os dados da tabela
-				// anterior em
-				// uma Matriz; A inserção já foi feita previamente
-				for (int l = 0; l < 7; l++) {
-					for (int c = 0; c < 7; c++) {
-						if (l != c) {
-							if (tempo[c][l] == 0) {
-								tempo[l][c] = Integer.parseInt(JOptionPane.showInputDialog(null,
-										"Digite o tempo para percorrer do ponto " + (l + 1) + " até o ponto " + (c + 1),
-										"Dados da tabela", -1));
+		// anterior em
+		// uma Matriz; A inserção já foi feita previamente
+		for (int l = 0; l < 7; l++) {
+			for (int c = 0; c < 7; c++) {
+				if (l != c) {
+					if (tempo[c][l] == 0) {
+						tempo[l][c] = Integer.parseInt(JOptionPane.showInputDialog(null,
+								"Digite o tempo para percorrer do ponto " + (l + 1) + " até o ponto " + (c + 1),
+								"Dados da tabela", -1));
 
-								tempo[c][l] = tempo[l][c];
-							}
-							w += tempo[l][c] + "   ";
-						} else
-							w += "X   ";
+						tempo[c][l] = tempo[l][c];
 					}
-					w += "\n";
-				}
-				JOptionPane.showMessageDialog(null, w, "Tabela com dados", -1);
-				// B) Construa um programa que informe ao usuário o tempo necessário
-				// para
-				// percorrer duas cidades por ele fornecidas, até o momento em que ele
-				// fornecer
-				// duas cidades iguais (origem e destino);
-				while (veri) {
-					orig = 0;
-					dest = 0;
-					orig = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite qual a cidade de origem (De 1 a 7)",
-							"Cidade de origem", -1)) - 1;
-					dest = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite qual a cidade de destino (De 1 a 7)",
-							"Cidade de destino", -1)) - 1;
-					if (orig == dest) {
-						veri = false;
-						JOptionPane.showMessageDialog(null, "Destino e origem igual!! \n\nESSE PROGRAMA IRA ENCERRAR AGORA!!",
-								"ERRO", 0);
-						break;
-					} else {
-						JOptionPane.showMessageDialog(null, "A distancia de " + (orig + 1) + " até " + (dest + 1) + " é de "
-								+ tempo[orig][dest] + " tempos", "Distancia de pontos", -1);
-					}
-				}
-				// C) Desenvolva um programa que permita ao usuário informar várias
-				// cidades, até
-				// inserir uma cidade “0”, e que mostre o tempo total para cumprir o
-				// percurso
-				// especificado entre as cidades fornecidas;
-				veri = true;
-				orig = 0;
-				dest = 0;
-				w = "";
-				orig = Integer.parseInt(
-						JOptionPane.showInputDialog(null, "Digite qual a cidade de origem (De 1 a 7)", "Cidade de origem", -1))
-						- 1;
+					w += tempo[l][c] + "   ";
+				} else
+					w += "X   ";
+			}
+			w += "\n";
+		}
+		JOptionPane.showMessageDialog(null, w, "Tabela com dados", -1);
+		// B) Construa um programa que informe ao usuário o tempo necessário
+		// para
+		// percorrer duas cidades por ele fornecidas, até o momento em que ele
+		// fornecer
+		// duas cidades iguais (origem e destino);
+		while (veri) {
+			orig = 0;
+			dest = 0;
+			orig = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite qual a cidade de origem (De 1 a 7)",
+					"Cidade de origem", -1)) - 1;
+			dest = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite qual a cidade de destino (De 1 a 7)",
+					"Cidade de destino", -1)) - 1;
+			if (orig == dest) {
+				veri = false;
+				JOptionPane.showMessageDialog(null, "Destino e origem igual!! \n\nESSE PROGRAMA IRA ENCERRAR AGORA!!",
+						"ERRO", 0);
+				break;
+			} else {
+				JOptionPane.showMessageDialog(null, "A distancia de " + (orig + 1) + " até " + (dest + 1) + " é de "
+						+ tempo[orig][dest] + " tempos", "Distancia de pontos", -1);
+			}
+		}
+		// C) Desenvolva um programa que permita ao usuário informar várias
+		// cidades, até
+		// inserir uma cidade “0”, e que mostre o tempo total para cumprir o
+		// percurso
+		// especificado entre as cidades fornecidas;
+		veri = true;
+		orig = 0;
+		dest = 0;
+		w = "";
+		orig = Integer.parseInt(
+				JOptionPane.showInputDialog(null, "Digite qual a cidade de origem (De 1 a 7)", "Cidade de origem", -1))
+				- 1;
+		dest = Integer.parseInt(JOptionPane.showInputDialog(null,
+				"Digite qual a cidade de destino (De 1 a 7) a partir da cidade " + (orig + 1), "Cidade de destino", -1))
+				- 1;
+		while (veri) {
+			if (dest == -1) {
+				veri = false;
+				JOptionPane.showMessageDialog(null,
+						"A distancia de todo percurso é de " + tempoC + " tempos\n Descrição do trajeto: " + w,
+						"Distancia do percurso", -1);
+				break;
+			} else {
+				tempoC += tempo[orig][dest];
+				w += "\nDo ponto " + (orig + 1) + " ao ponto " + (dest + 1) + " levou " + tempo[orig][dest] + " tempos";
+				orig = dest;
 				dest = Integer.parseInt(JOptionPane.showInputDialog(null,
-						"Digite qual a cidade de destino (De 1 a 7) a partir da cidade " + (orig + 1), "Cidade de destino", -1))
-						- 1;
-				while (veri) {
-					if (dest == -1) {
-						veri = false;
-						JOptionPane.showMessageDialog(null,
-								"A distancia de todo percurso é de " + tempoC + " tempos\n Descrição do trajeto: " + w,
-								"Distancia do percurso", -1);
-						break;
-					} else {
-						tempoC += tempo[orig][dest];
-						w += "\nDo ponto " + (orig + 1) + " ao ponto " + (dest + 1) + " levou " + tempo[orig][dest] + " tempos";
-						orig = dest;
-						dest = Integer.parseInt(JOptionPane.showInputDialog(null,
-								"Digite qual a cidade de destino (De 1 a 7) a partir da cidade " + (dest + 1),
-								"Cidade de destino", -1)) - 1;
-					}
-				}		
+						"Digite qual a cidade de destino (De 1 a 7) a partir da cidade " + (dest + 1),
+						"Cidade de destino", -1)) - 1;
+			}
+		}
 		// D) Escreva um programa que auxilie um usuário a escolher um roteiro
 		// de
 		// férias, sendo que o usuário fornece duas cidades: a primeira é sua
@@ -143,14 +143,14 @@ public class Ex4 {
 		analisa = 100;
 		roteiro[1] = meio1;
 		for (int l = 0; l < 7; l++) {
-			if (tempo[meio1][l] < analisa && (tempo[meio1][l]) > 0 && roteiro[3] != l && roteiro[0] != l && roteiro[1] != l) {
+			if (tempo[meio1][l] < analisa && (tempo[meio1][l]) > 0 && roteiro[3] != l && roteiro[0] != l
+					&& roteiro[1] != l) {
 				analisa = tempo[meio1][l];
 				meio2 = l;
 			}
 
 		}
 
-		
 		roteiro[2] = meio2;
 
 		for (int i = 0; i < roteiro.length; i++) {

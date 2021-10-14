@@ -4,7 +4,7 @@ public class Conta {
 	int agencia = 121;
 	int numero;
 	String titular;
-	
+
 	public void deposita(double valor) {
 		this.saldo = this.saldo + valor;
 	}

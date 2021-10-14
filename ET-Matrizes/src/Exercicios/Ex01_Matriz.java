@@ -22,12 +22,12 @@ public class Ex01_Matriz {
 			}
 		}
 		System.out.println("a.	A soma do números impares fornecidos: " + somaImp);
-		
-		for (int c = 0; c < colMatriz.length; c++){
-		System.out.println("b.	A soma da  " + (c + 1) + "º coluna: " + colMatriz[c]);
+
+		for (int c = 0; c < colMatriz.length; c++) {
+			System.out.println("b.	A soma da  " + (c + 1) + "º coluna: " + colMatriz[c]);
 		}
-		for (int l = 0; l < colMatriz.length; l++){
-		System.out.println("c.	A soma da  " + (l + 1) + "º linha: " + linMatriz[l]);
+		for (int l = 0; l < colMatriz.length; l++) {
+			System.out.println("c.	A soma da  " + (l + 1) + "º linha: " + linMatriz[l]);
 		}
 		s.close();
 	}

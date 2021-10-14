@@ -37,7 +37,8 @@ public class Cadastro_v3 {
 		diario.close();
 		ler.close();
 	}
-	private static void gravarString (RandomAccessFile arq, String s, int tam) throws IOException{
+
+	private static void gravarString(RandomAccessFile arq, String s, int tam) throws IOException {
 		StringBuilder result = new StringBuilder(s);
 		result.setLength(tam);
 		arq.writeChars(result.toString());

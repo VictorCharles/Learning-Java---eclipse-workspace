@@ -1,24 +1,23 @@
 package Exemplos;
 
 public class ParImpar {
-	//Atributos
+	// Atributos
 	private int numero = 0;
-	
-	//Set e get
+
+	// Set e get
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	
+
 	public int getNumero() {
 		return numero;
 	}
-	
+
 	public String definir() {
-		int mod = numero%2;
+		int mod = numero % 2;
 		if (mod == 0) {
 			return ("Par");
-		}
-		else {
+		} else {
 			return ("Impar");
 		}
 	}

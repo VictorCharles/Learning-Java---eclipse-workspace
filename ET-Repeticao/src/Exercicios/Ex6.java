@@ -12,24 +12,24 @@ public class Ex6 {
 				System.out.println("Digite um multiplo de 3");
 				System.out.println("OU 0 oara encerrar");
 				n = Integer.parseInt(dado.readLine());
-				
-				if (n==0) {
+
+				if (n == 0) {
 					System.exit(0);
 				}
-				if ((n%3) != 0) {
+				if ((n % 3) != 0) {
 					System.out.println("O numero: " + n);
 					System.out.println("Não é multiplo de 3");
 					System.out.println("Tente outro");
 					continue;
 				}
-			}while ((n%3)!= 0);
-			
-			for (x = 3; x <=n; x+=3) {
+			} while ((n % 3) != 0);
+
+			for (x = 3; x <= n; x += 3) {
 				System.out.println("1/" + x + " + ");
-				r += (float)1/x;
+				r += (float) 1 / x;
 			}
 			System.out.println("1 / " + x + "=");
-			r+= (float) 1/x;
+			r += (float) 1 / x;
 			System.out.println(r);
 			dado.close();
 		} catch (IOException erro) {

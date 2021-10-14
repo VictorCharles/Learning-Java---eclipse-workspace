@@ -17,24 +17,23 @@ public class MediaNum3 {
 
 				if (S == 0) {
 					break;
-				}
-				else if (S <= 0) {
+				} else if (S <= 0) {
 					System.out.println("==> Somente números positivos <==");
 					System.out.println("Tente novamente");
 					continue;
 				}
-				inteiro = (int)S;
-				if (inteiro != S){
+				inteiro = (int) S;
+				if (inteiro != S) {
 					System.out.println("==> Somente números positivos <==");
 					System.out.println("Tente novamente");
 					continue;
 				}
 				positivos++;
-				kNum ++;
+				kNum++;
 			}
-			
+
 			System.out.println("Foram digitados" + kNum + " números");
-			System.out.println("A média é: " + (positivos/kNum));
+			System.out.println("A média é: " + (positivos / kNum));
 			dado.close();
 		} catch (IOException erro) {
 			// Indica erro de entrada de dados

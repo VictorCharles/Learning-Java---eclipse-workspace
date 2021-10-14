@@ -14,7 +14,7 @@ public class SalarioFuncionario {
 		System.out.println("Quantas horas foram trabalhadas?");
 		horas = scanner.nextInt();
 
-		if (horas > 40 ) {
+		if (horas > 40) {
 			horasExcesso = horas - 50;
 			horas -= horasExcesso;
 		}

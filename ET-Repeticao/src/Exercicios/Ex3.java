@@ -7,20 +7,20 @@ public class Ex3 {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 		int nPos = 0, nNeg = 0, nulo = 0, t = 0;
 		float n = 0, soma = 0;
-		
+
 		try {
-				System.out.println("Quantos numéros você quer escrever? ");
-				t = Integer.parseInt(dado.readLine());
-				for (int x = 0; x <= t; x++) {
+			System.out.println("Quantos numéros você quer escrever? ");
+			t = Integer.parseInt(dado.readLine());
+			for (int x = 0; x <= t; x++) {
 				System.out.println("\nDigite um numero: ");
 				n = Float.parseFloat(dado.readLine());
 				if (n > 0) {
 					nPos++;
 				}
-				if (n < 0){
+				if (n < 0) {
 					nNeg++;
 				}
-				if (n == 0){
+				if (n == 0) {
 					nulo++;
 				}
 				soma += n;

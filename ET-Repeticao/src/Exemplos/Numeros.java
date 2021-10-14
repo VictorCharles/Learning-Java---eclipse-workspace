@@ -11,15 +11,15 @@ public class Numeros {
 	public static void main(String[] args) {
 		BufferedReader numero = new BufferedReader(new InputStreamReader(System.in));
 		int tentativas = 1, tentativaAtual, n;
-		
+
 		try {
 			System.out.println("Digite um número: ");
 			n = Integer.parseInt(numero.readLine());
 			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\nDigite sua tentativa: ");
 			tentativaAtual = Integer.parseInt(numero.readLine());
-			while(tentativaAtual != n) {
-				
-				if(tentativaAtual > n) {
+			while (tentativaAtual != n) {
+
+				if (tentativaAtual > n) {
 					System.out.println("Sua tentativa foi ALTA");
 				} else {
 					System.out.println("Sua tentativa foi BAIXA");
@@ -29,14 +29,14 @@ public class Numeros {
 				tentativas++;
 			}
 			numero.close();
-			
+
 			System.out.println("Voce chutou " + tentativaAtual + " e acertou! Você tentou: " + tentativas + " vezes.");
-		} catch(IOException erro) {
+		} catch (IOException erro) {
 			System.out.println("Houve erro na entrada de dados");
-		} catch(NumberFormatException erro) {
+		} catch (NumberFormatException erro) {
 			System.out.println("Digite apenas caracteres numéricos");
 
-	}
+		}
 
-}
+	}
 }

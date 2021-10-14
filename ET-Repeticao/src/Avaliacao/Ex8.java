@@ -29,45 +29,38 @@ public class Ex8 {
 				if (canal == 2) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k2 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 4) {
+				} else if (canal == 4) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k4 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 5) {
+				} else if (canal == 5) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k5 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 7) {
+				} else if (canal == 7) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k7 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 9) {
+				} else if (canal == 9) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k9 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 11) {
+				} else if (canal == 11) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k11 += Integer.parseInt(dado.readLine());
-				}
-				else if (canal == 13) {
+				} else if (canal == 13) {
 					System.out.println("Quantas pessoas estavam assistindo esse canal?");
 					k13 += Integer.parseInt(dado.readLine());
-				}
-				else {
+				} else {
 					System.out.println("Digite um canal valido");
 				}
 			} while (canal != 0);
 			kPTotal = k2 + k4 + k5 + k7 + k9 + k11 + k13;
 			System.out.println("===============> RESULTADO <===============");
-			System.out.println("Audiência do canal 2 " + ((k2/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 4 " + ((k4/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 5 " + ((k5/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 7 " + ((k7/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 9 " + ((k9/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 11 " + ((k11/ kPTotal) * 100) + "%");
-			System.out.println("Audiência do canal 13 " + ((k13/ kPTotal) * 100) + "%");
-			
+			System.out.println("Audiência do canal 2 " + ((k2 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 4 " + ((k4 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 5 " + ((k5 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 7 " + ((k7 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 9 " + ((k9 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 11 " + ((k11 / kPTotal) * 100) + "%");
+			System.out.println("Audiência do canal 13 " + ((k13 / kPTotal) * 100) + "%");
+
 			dado.close();
 
 		} catch (IOException erro) {

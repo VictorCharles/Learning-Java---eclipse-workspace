@@ -10,11 +10,11 @@ public class SomaIn {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 
 		try {
-			int n = Integer.parseInt(dado.readLine()), soma= 0, x=1;
+			int n = Integer.parseInt(dado.readLine()), soma = 0, x = 1;
 			while (x <= n) {
 				System.out.println(soma);
 				soma += x;
-				//soma = soma + x;
+				// soma = soma + x;
 				x++;
 			}
 			System.out.println(soma);

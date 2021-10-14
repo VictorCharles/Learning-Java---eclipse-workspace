@@ -19,9 +19,9 @@ public class Ex2 {
 			System.out.println("Digite o número N para calcular o H: ");
 			N = Integer.parseInt(dado.readLine());
 			for (float x = 2; N >= x; x++) {
-			H += (1 / x);
-			} 
-			
+				H += (1 / x);
+			}
+
 			System.out.println("H = " + H);
 			dado.close();
 

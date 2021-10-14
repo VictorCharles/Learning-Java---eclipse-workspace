@@ -1,14 +1,15 @@
-
+//classe abstrata n pode ser instanciada, somente usada como herança 
 public abstract class Funcionario {
 	// ATRIBUTOS
 	private String nome;
 	private String cpf;
 	private double salario;
-	private int senha;
+	
+	
 	
 	
 	// metodo sem corpo, nao tem implementacao
-	public abstract double getbonificacao();
+	public abstract double getBonificacao();
 
 	public String getNome() {
 		return this.nome;

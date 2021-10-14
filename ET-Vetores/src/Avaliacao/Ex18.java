@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import javax.swing.JOptionPane;
 
-public class Ex18{
+public class Ex18 {
 	public static void main(String[] args) {
 		String[] vetor1 = new String[50];
 		String[] vetor2 = new String[vetor1.length];

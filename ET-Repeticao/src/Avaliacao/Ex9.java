@@ -17,13 +17,13 @@ public class Ex9 {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 		int ganhador = 0, p1 = 0, p2 = 0;
 		try {
-			do{
+			do {
 				System.out.println("Quem fez o ponto, o Jogador1 ou o Jogador2? 1 para o Jogador1 e 2 para o Jogador2");
 				int jogador = Integer.parseInt(dado.readLine());
-				if (jogador == 1 ) {
+				if (jogador == 1) {
 					p1++;
 				}
-				if (jogador == 2 ) {
+				if (jogador == 2) {
 					p1++;
 				}
 				if (p1 >= 21 && (p1 - p2) >= 2) {
@@ -35,7 +35,7 @@ public class Ex9 {
 			} while (ganhador == 0);
 			System.out.println("+-------PLACAR--------+");
 			System.out.println("|Jogador1  X  Jogador2|");
-			System.out.println("| "+p1+"       |       "+p2+" |");
+			System.out.println("| " + p1 + "       |       " + p2 + " |");
 			System.out.println("+---------------------+");
 			if (ganhador == 1) {
 				System.out.println("O Jogador1 ganhou a partida");
@@ -43,7 +43,7 @@ public class Ex9 {
 			if (ganhador == 2) {
 				System.out.println("O Jogador2 ganhou a partida");
 			}
-			
+
 			dado.close();
 		} catch (IOException erro) {
 			// Indica erro de entrada de dados

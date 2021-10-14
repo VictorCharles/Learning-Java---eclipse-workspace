@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="Gerente"/>
+    <fullyQualifiedTypeName name="SistemaInterno"/>
+    <fullyQualifiedTypeName name="EditorVideo"/>
+    <fullyQualifiedTypeName name="Funcionario"/>
+    <fullyQualifiedTypeName name="FuncinarioAutenticavel"/>
+    <fullyQualifiedTypeName name="FuncionarioAutenticavel"/>
 </qualifiedTypeNameHistroy>

@@ -5,9 +5,9 @@ import java.io.*;
 public class Ex5 {
 	public static void main(String[] args) {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
-		int idade=0, tId=0, k18=0, k25=0;
-		float altura=0;
-		float peso=0, tPes=0;
+		int idade = 0, tId = 0, k18 = 0, k25 = 0;
+		float altura = 0;
+		float peso = 0, tPes = 0;
 
 		try {
 			System.out.println("Quantos atletas tem no time?");
@@ -31,8 +31,8 @@ public class Ex5 {
 				tPes += peso;
 				tId += idade;
 			}
-			
-			System.out.println("Peso medio dos atletas: " + (tPes / kAtle) + " kg" );
+
+			System.out.println("Peso medio dos atletas: " + (tPes / kAtle) + " kg");
 			System.out.println("Idade media dos atletas: " + (tId / kAtle));
 			System.out.println("Com mais de 25 anos e 1,90 de altura " + k25);
 			System.out.println("Com idade entre 18 e 22 anos " + k18);

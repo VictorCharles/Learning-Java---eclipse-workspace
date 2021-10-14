@@ -34,7 +34,7 @@ public class Locacao {
 			KMExtra = 0;
 		}
 		valExtraTotal = KMExtra * 1.50;
-		
+
 		System.out.println("\n  Dias Locados ..........: " + qtdDia);
 		System.out.println("  Valor por dia .........: R$ 115,00");
 		System.out.println("  Valor Aluguel parcial .: R$ " + valTotal);
@@ -49,8 +49,8 @@ public class Locacao {
 		System.out.println("  Valor por Km extra .....: R$ 1,50");
 		System.out.println("  Valor Extra total ......: R$ " + valExtraTotal);
 		System.out.println("---------------------------------------------");
-		System.out.println("  Valor Aluguel Total ....: R$ " + (valTotal + valExtraTotal) );
-		
+		System.out.println("  Valor Aluguel Total ....: R$ " + (valTotal + valExtraTotal));
+
 		s.close();
 	}
 

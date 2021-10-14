@@ -17,10 +17,10 @@ public class Ex10 {
 	public static void main(String[] args) {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 		int andar = 0, kP = 0, cont = 0, a;
-		try {	
+		try {
 			System.out.println("Digite quantos andares tem no prédio ");
 			andar = Integer.parseInt(dado.readLine());
-			
+
 			for (a = 0; a <= andar; a++) {
 				System.out.println(a + "º Andar");
 				System.out.println("Quantas pessoas entraram no elevador? ");
@@ -30,17 +30,17 @@ public class Ex10 {
 				if (kP < 0) {
 					System.out.println("O número de pessoas dentro do elevador não pode ser menor que 0 (ERRO)");
 					break;
-				}
-				else if (kP > 15) {
+				} else if (kP > 15) {
 					cont = kP - 15;
-					System.out.println("O número de pessoas dentro do elevador excede a capacidade maxima (15 PESSOAS). Devem sair " + cont + " pessoas");
+					System.out.println(
+							"O número de pessoas dentro do elevador excede a capacidade maxima (15 PESSOAS). Devem sair "
+									+ cont + " pessoas");
 					kP -= cont;
-				}
-				else {
+				} else {
 					System.out.println("O elevador torna a subir");
-				}	
+				}
 			}
-			
+
 			System.out.println("Ficaram " + kP + "pessoas no elevador para descer no " + a + "º andar");
 			dado.close();
 		} catch (IOException erro) {

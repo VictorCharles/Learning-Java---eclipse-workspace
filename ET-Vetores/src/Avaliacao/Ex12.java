@@ -27,8 +27,8 @@ public class Ex12 {
 				JOptionPane.showMessageDialog(null, w3 + " Não foi encontrado, digite outro codigo", "Lista de nomes",
 						0);
 			} else {
-				JOptionPane.showMessageDialog(null, " Nome correspondente ao codigo:  " + Nomes[indice], "Lista de nomes",
-						3);
+				JOptionPane.showMessageDialog(null, " Nome correspondente ao codigo:  " + Nomes[indice],
+						"Lista de nomes", 3);
 				ver = false;
 			}
 

@@ -26,7 +26,7 @@ public class Ex1 {
 			} while (n != 0);
 			System.out.println("Maior número é " + maior);
 			dado.close();
-			
+
 		} catch (IOException erro) {
 			// Indica erro de entrada de dados
 			System.out.println("Houve erro na entrada de dados");

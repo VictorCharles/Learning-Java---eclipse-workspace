@@ -27,7 +27,7 @@ public class Ex5 {
 	public static void main(String[] args) {
 		BufferedReader dado = new BufferedReader(new InputStreamReader(System.in));
 		String nome;
-		double sal, salClube= 0, salReajus=0;
+		double sal, salClube = 0, salReajus = 0;
 
 		try {
 
@@ -38,28 +38,28 @@ public class Ex5 {
 				sal = Double.parseDouble(dado.readLine());
 				salClube += sal;
 				if (sal > 0 & sal <= 10000) {
-					System.out.println("O jogador " + nome + " com salario de R$ " + sal + " vai ter um aumento de 20%\nO salario dele passa a ser R$ " + (sal * 1.20));
+					System.out.println("O jogador " + nome + " com salario de R$ " + sal
+							+ " vai ter um aumento de 20%\nO salario dele passa a ser R$ " + (sal * 1.20));
 					sal *= 1.20;
 					salReajus += sal;
-				} 
-				else if (sal > 10000 & sal <= 50000) {
-					System.out.println("O jogador " + nome + " com salario de R$ " + sal + " vai ter um aumento de 10%\n O salario dele passa a ser R$ " + (sal * 1.10));
+				} else if (sal > 10000 & sal <= 50000) {
+					System.out.println("O jogador " + nome + " com salario de R$ " + sal
+							+ " vai ter um aumento de 10%\n O salario dele passa a ser R$ " + (sal * 1.10));
 					sal *= 1.10;
 					salReajus += sal;
-				} 
-				else if (sal > 50000) {
-					System.out.println("O jogador " + nome + " com salario de R$ " + sal + " vai ter um aumento de 5%\n O salario dele passa a ser R$ " + (sal * 1.10));
+				} else if (sal > 50000) {
+					System.out.println("O jogador " + nome + " com salario de R$ " + sal
+							+ " vai ter um aumento de 5%\n O salario dele passa a ser R$ " + (sal * 1.10));
 					sal *= 1.05;
 					salReajus += sal;
 				}
 
 			}
-			
-			
+
 			System.out.println("------------------> FOLHA DE PAGAMENTO <------------------ ");
 			System.out.println("Total da folha de pagamentos (sem reajustes): R$ " + salClube);
 			System.out.println("Total da folha de pagamentos (com reajustes): R$ " + salReajus);
-			System.out.println("Teve um aumento percentual de " +  (((salReajus-salClube) / salClube)  * 100) + "%");
+			System.out.println("Teve um aumento percentual de " + (((salReajus - salClube) / salClube) * 100) + "%");
 			System.out.println("O reajuste foi de " + ((salReajus / salClube) * 100) + "%");
 			dado.close();
 		} catch (IOException erro) {

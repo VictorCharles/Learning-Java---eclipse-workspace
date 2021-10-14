@@ -8,8 +8,8 @@ public class Ex13 {
 		int[] vetor2 = new int[vetor1.length];
 		String w = "";
 		for (int n = 0; n < vetor1.length; n++) {
-			vetor1[n] = Integer.parseInt(
-					JOptionPane.showInputDialog(null, "Digite um nome para inserir no vetor.", "Vetores", 3));
+			vetor1[n] = Integer
+					.parseInt(JOptionPane.showInputDialog(null, "Digite um nome para inserir no vetor.", "Vetores", 3));
 			if ((vetor1[n] % 2) == 0) {
 				vetor2[n] = vetor1[n] * 2;
 

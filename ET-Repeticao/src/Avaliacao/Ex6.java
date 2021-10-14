@@ -68,8 +68,7 @@ public class Ex6 {
 					System.out.println("Digite a quantidade");
 					int k = Integer.parseInt(dado.readLine());
 					conta += (k * 1.8);
-				}
-				else {
+				} else {
 					System.out.println("Codigo invalido");
 				}
 			}

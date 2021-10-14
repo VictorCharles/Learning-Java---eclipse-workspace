@@ -45,19 +45,14 @@ public class Professor {
 		} else if (salarioBruto < 11843.66) {
 			imposto = salarioBruto * 0.25;
 		}
-		
-		
+
 		System.out.println("\n-------> SALÁRIO <-------");
 		System.out.println("Salário bruto: R$ " + salarioBruto);
 		System.out.println("Valor de desconto por falta: R$ " + descontado);
 		System.out.println("Valor descontado de imposto de renda: R$ " + imposto);
 		salarioDado = salarioBruto - descontado - imposto;
 		System.out.println("Salário liquido: R$ " + salarioDado);
-		
-		
-		
-		
-		
+
 		scanner.close();
 	}
 }

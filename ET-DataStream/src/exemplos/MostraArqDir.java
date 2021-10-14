@@ -15,12 +15,11 @@ public class MostraArqDir {
 			} else {
 				System.out.println("\nConteudo da pasta: \n");
 				String pasta[] = objFile.list();
-				for (String item: pasta){
+				for (String item : pasta) {
 					System.out.printf("%s \n", item);
 				}
 			}
-		}
-		else {
+		} else {
 			System.out.println("ERRO: Arquivo ou pasta informada inexistente!\n");
 		}
 	}
