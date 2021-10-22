@@ -1,5 +1,9 @@
 package br.com.bytebank.banco.models;
 
+//FQN ideal
+// pais.dominio.empresa.projeto.pacote
+
+
 public class CalculadorDeImposto {
 
 	private double totalImposto;

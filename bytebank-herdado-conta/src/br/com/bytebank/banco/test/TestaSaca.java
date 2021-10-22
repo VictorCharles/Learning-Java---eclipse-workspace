@@ -1,5 +1,5 @@
 package br.com.bytebank.banco.test;
-//modelo.Conta => Full Qualified Name
+//br.com.bytebank.modelo.Conta => Full Qualified Name
 import br.com.bytebank.banco.models.Conta;
 import br.com.bytebank.banco.models.ContaCorrente;
 import br.com.bytebank.banco.models.SaldoInsuficienteException;
