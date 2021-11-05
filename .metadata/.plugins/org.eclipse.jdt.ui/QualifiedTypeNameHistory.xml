@@ -21,4 +21,12 @@
     <fullyQualifiedTypeName name="java.lang.AutoCloseable"/>
     <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.especial.ContaEspecial"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.models.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.models.Conta"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.models.Cliente"/>
+    <fullyQualifiedTypeName name="java.util.zip.CRC32C"/>
+    <fullyQualifiedTypeName name="br.com.bytebank.banco.models.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>
