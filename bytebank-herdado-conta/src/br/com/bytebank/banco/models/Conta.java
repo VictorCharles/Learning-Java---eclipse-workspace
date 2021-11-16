@@ -1,34 +1,33 @@
 package br.com.bytebank.banco.models;
+
 /**
  * classe que representa uma conta (molde) a ser herdada no bytebank
  * 
  * @author Charles
  * @version 0.1
  */
-public abstract class Conta {
-
+public abstract class Conta extends Object implements Comparable<Conta> {
+// implements Comparable é pra definir a ordem natural dos elementos
 	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
 	private static int total = 0;
 
-/**
- * construtor para inicializa um objeto conta a paritr da agencia e do numero
- * @param agencia
- * @param numero
- */
-	
-	
-	
-	
+	/**
+	 * construtor para inicializa um objeto conta a paritr da agencia e do numero
+	 * 
+	 * @param agencia
+	 * @param numero
+	 */
+
 	public Conta(int agencia, int numero) {
 		Conta.total++;
 		// System.out.println("O total de contas é " + Conta.total);
 		if (agencia < 1) {
 			throw new IllegalArgumentException("Agencia Invalida");
 		}
-		if (numero < 1 ) {
+		if (numero < 1) {
 			throw new IllegalArgumentException("Número da conta invalido");
 		}
 		this.agencia = agencia;
@@ -45,10 +44,11 @@ public abstract class Conta {
 	 * @param valor
 	 * @throws SaldoInsuficienteException
 	 */
-	
+
 	public void saca(double valor) throws SaldoInsuficienteException {
 		if (this.saldo < valor)
-			throw new SaldoInsuficienteException("Saldo insuficiente \n Saldo R$ " + this.saldo + "0 \n Valor R$ " + valor + "0");
+			throw new SaldoInsuficienteException(
+					"Saldo insuficiente \n Saldo R$ " + this.saldo + "0 \n Valor R$ " + valor + "0");
 
 		this.saldo -= valor;
 	}
@@ -99,11 +99,29 @@ public abstract class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
+
+	@Override
+	public int compareTo(Conta outra) { // famosa ordem "Natural", ou pelo menos o que espera que seja o organizador
+		return Double.compare(this.saldo, outra.saldo);
+		
+	}
 	
 	@Override
 	public String toString() {
-		
-		return "Numero: " + this.getNumero() + ", Agencia: " + this.agencia;
+
+		return "Numero: " + this.getNumero() + ", Agencia: " + this.agencia + ", Saldo: R$ " + this.saldo;
+	}
+	
+	@Override
+	public boolean equals(Object ref) {
+		Conta outra = (Conta) ref;
+		if (this.agencia != outra.agencia) {
+			return false;
+		}
+		if (this.numero != outra.numero) {
+			return false;
+		}
+		return true;
 	}
 
 }

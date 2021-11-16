@@ -11,9 +11,10 @@ public class TesteArrayList {
 		
 		//Generics
 		ArrayList<Conta> lista = new ArrayList<Conta>();
+		// Nessa array lista existe apenas classe Conta, é mais seguro e ele faz o auto cast quando referenciado como object
 		
 		// ArraysList<String> nomes = new ArrayLista<String>();
-		// Nessa array lista existe apenas String, é mais seguro
+		// Nessa array lista existe apenas String, é mais seguro e ele faz o auto cast quando referenciado como object
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
 		Conta cc2 = new ContaCorrente(22, 33);
